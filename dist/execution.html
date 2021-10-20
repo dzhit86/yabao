@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/yabao-icons/style.css">
+    <link rel="stylesheet" href="fonts/panton/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Оформление</title>
+</head>
+
+<body>
+<div class="_wrapper">
+    <header class="header header_mini">
+        <div class="_container">
+            <div class="_container__item">
+                <div class="header__content">
+                    <div class="header__top">
+                        <div class="header__logo">
+                            <a href="#" class="logo">
+                                <span class="logo__icon icon-logo"></span>
+                                <div class="logo__text">
+                                    <span class="logo__title">Ya Bao</span>
+                                    <span class="logo__label">Дух китайской еды</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="header__order order-step">
+                            <div class="order-step__item @@order-class-1">
+                                <span class="order-step__num">1</span>
+                                <span class="order-step__name">Корзина</span>
+                            </div>
+                            <div class="order-step__item order-step__item_active">
+                                <span class="order-step__num">2</span>
+                                <span class="order-step__name">Оформление заказа</span>
+                            </div>
+                            <div class="order-step__item @@order-class-3">
+                                <span class="order-step__num">3</span>
+                                <span class="order-step__name">Заказ принят</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+<main class="main main_bottomm">
+  <div class="_container">
+    <div class="_container__item">
+      <div class="execution" id="sectionExecution">
+        <h1 class="execution__title">Заказ на доставку</h1>
+        <div class="execution__wrap">
+
+          <div class="execution__content">
+            <div class="execution-form">
+
+              <div class="form-input">
+                <label class="form-input__label">
+                  <span class="form-input__name">Ваше имя</span>
+                  <div class="form-input__field">
+                    <input type="text" class="form-input__input _text" placeholder="">
+                  </div>
+                </label>
+              </div>
+
+              <div class="form-input">
+                <label class="form-input__label">
+                  <span class="form-input__name">Номер телефона</span>
+                  <div class="form-input__field">
+                    <input type="tel" class="form-input__input _phone" value="+7 125 695-45-88" disabled>
+                  </div>
+                </label>
+              </div>
+
+              <div class="form-input">
+                <label class="form-input__label">
+                  <span class="form-input__name">Адрес доставки</span>
+                  <div class="form-input__field form-input__field_textarea">
+                    <textarea cols="30" rows="10" class="form-input__input" id="deliveryFieldOutput" disabled></textarea>
+                    <a href="#" data-fancybox="deliveryForm" data-src="#deliveryAddress" class="form-input__change">Изменить</a>
+                  </div>
+                </label>
+              </div>
+
+              <div class="form-input">
+                <label class="form-input__label">
+                  <span class="form-input__name">Время доставки</span>
+                  <div class="form-input__field">
+                    <input type="text" class="form-input__input" id="deliveryTimeField" disabled>
+                    <a href="#" data-fancybox="deliveryForm" data-src="#deliveryTime" class="form-input__change">Изменить</a>
+                  </div>
+                </label>
+              </div>
+
+            </div>
+            <div class="execution-pay">
+              <div class="execution-pay__title">Способы оплаты</div>
+
+              <div class="execution-pay__item">
+                <div class="execution-pay__name">
+                  <label class="label label_radio execution-pay__check">
+                    <input type="radio" name="type_pay" id="typePayCard" checked>
+                    <span class="label__symb"></span>
+                    <span class="label__icon icon-card"></span>
+                    <span class="label__title">Картой на сайте</span>
+                  </label>
+                </div>
+                <div class="execution-pay__content execution-pay__content_cols">
+                  <div class="execution-pay__side">
+                    <div class="form-card">
+                      <input type="text" class="_input form-cart__item form-card__item_card" placeholder="Номер карты">
+                      <input type="text" class="_input form-cart__item form-card__item_date" placeholder="Срок действия">
+                      <input type="text" class="_input form-cart__item form-card__item_cvc" placeholder="CVC">
+                    </div>
+                  </div>
+                  <div class="execution-pay__side">
+                    <div class="execution-pay__about">
+                      <p><svg width="131" height="21" viewBox="0 0 131 21" fill="none" class="disclaimer"><path d="M74.684 19.106V17.96a.704.704 0 00-.187-.525.653.653 0 00-.504-.2.66.66 0 00-.352.074.69.69 0 00-.266.25.657.657 0 00-.248-.245.626.626 0 00-.333-.08.563.563 0 00-.293.065.59.59 0 00-.222.206v-.225h-.383v1.826h.386v-1.005a.444.444 0 01.105-.347.412.412 0 01.326-.138c.253 0 .382.172.382.482v1.016h.386V18.1a.446.446 0 01.106-.347.414.414 0 01.325-.138c.261 0 .386.172.386.482v1.016l.386-.008zM80.4 17.28h-.63v-.554h-.385v.554h-.35v.363h.357v.84c0 .424.158.677.61.677a.873.873 0 00.479-.142l-.11-.34a.687.687 0 01-.34.103c-.183 0-.253-.122-.253-.305v-.833h.625l-.003-.363zm3.263-.046a.503.503 0 00-.267.068.529.529 0 00-.197.2v-.222h-.379v1.826h.383v-1.024c0-.302.125-.47.368-.47a.603.603 0 01.239.046l.117-.382a.79.79 0 00-.272-.05l.008.008zm-4.933.191a1.277 1.277 0 00-.718-.19c-.445 0-.735.22-.735.584 0 .298.213.481.607.538l.184.027c.21.03.309.088.309.191 0 .141-.14.222-.401.222a.913.913 0 01-.585-.191l-.184.31c.223.16.49.244.761.236.508 0 .802-.248.802-.596s-.232-.489-.614-.546l-.184-.027c-.166-.023-.298-.057-.298-.18 0-.122.125-.214.335-.214a1.1 1.1 0 01.552.157l.169-.32zm10.246-.19a.504.504 0 00-.267.067.529.529 0 00-.196.2v-.222h-.38v1.826h.383v-1.024c0-.302.125-.47.368-.47a.603.603 0 01.24.046l.117-.382a.791.791 0 00-.272-.05l.007.008zm-4.929.954a.953.953 0 00.266.693.858.858 0 00.672.262.898.898 0 00.633-.217l-.184-.321a.754.754 0 01-.46.164.557.557 0 01-.37-.187.599.599 0 010-.795.557.557 0 01.37-.187c.166.002.328.06.46.164l.184-.32a.898.898 0 00-.633-.218.858.858 0 00-.672.262.953.953 0 00-.266.693v.007zm3.583 0v-.909h-.383v.222a.673.673 0 00-.244-.203.647.647 0 00-.307-.065c-.244 0-.478.1-.65.28a.974.974 0 00-.27.675c0 .254.097.496.27.676.172.179.406.28.65.28a.647.647 0 00.307-.065.673.673 0 00.244-.203v.221h.383v-.909zm-1.424 0a.565.565 0 01.105-.297.534.534 0 01.244-.189.513.513 0 01.568.139.56.56 0 01.103.596.547.547 0 01-.195.244.517.517 0 01-.681-.08.552.552 0 01-.144-.413zm-4.616-.955a.904.904 0 00-.647.29.975.975 0 00-.26.679.973.973 0 00.278.671c.175.177.41.274.655.27.264.014.524-.074.73-.248l-.184-.294a.818.818 0 01-.512.19.475.475 0 01-.35-.112.512.512 0 01-.176-.334h1.306v-.153c0-.573-.342-.955-.835-.955l-.005-.004zm0 .355a.422.422 0 01.31.126.452.452 0 01.135.318h-.92a.477.477 0 01.147-.32.443.443 0 01.32-.124h.008zm9.584.604v-1.646h-.368v.955a.673.673 0 00-.245-.203.647.647 0 00-.307-.065c-.243 0-.477.1-.65.28a.974.974 0 00-.27.675c0 .254.098.496.27.676.173.179.407.28.65.28a.647.647 0 00.307-.065.673.673 0 00.245-.203v.221h.368v-.905zm.638.648a.178.178 0 01.166.25.184.184 0 01-.166.11.18.18 0 01-.098-.03.19.19 0 01-.067-.08.186.186 0 01.038-.199.178.178 0 01.132-.052h-.005zm0 .322a.126.126 0 00.096-.042.144.144 0 000-.19.128.128 0 00-.149-.03.134.134 0 00-.044.03.144.144 0 000 .19.135.135 0 00.103.042h-.006zm.011-.227c.018 0 .034.005.048.015a.048.048 0 01.017.04c0 .007-.001.013-.003.02a.046.046 0 01-.01.015.063.063 0 01-.039.017l.054.063h-.043l-.05-.063h-.016v.063h-.035v-.168l.077-.002zm-.04.033v.045h.04a.037.037 0 00.022 0 .02.02 0 00.002-.008.02.02 0 00-.002-.009.02.02 0 00.002-.008.02.02 0 00-.002-.009.037.037 0 00-.022 0l-.04-.011zm-2.023-.776a.565.565 0 01.104-.297.534.534 0 01.244-.19.513.513 0 01.568.14.56.56 0 01.103.596.548.548 0 01-.195.243.518.518 0 01-.68-.079.552.552 0 01-.144-.413zm-12.917 0v-.913h-.383v.222a.673.673 0 00-.245-.203.646.646 0 00-.307-.065c-.244 0-.477.1-.65.28a.974.974 0 00-.27.675c0 .254.098.496.27.676.173.179.406.28.65.28a.646.646 0 00.307-.065.673.673 0 00.245-.203v.221h.383v-.905zm-1.424 0a.565.565 0 01.104-.297.534.534 0 01.245-.19.513.513 0 01.568.14.572.572 0 01.103.596.548.548 0 01-.195.243.518.518 0 01-.505.05.528.528 0 01-.293-.319.568.568 0 01-.03-.223h.003z" fill="#231F20"></path><path d="M84.398 3.365h-5.794v10.813h5.794V3.365z" fill="#FF5F00"></path><path d="M78.97 8.773a7.085 7.085 0 01.665-3.007 6.823 6.823 0 011.865-2.4 6.49 6.49 0 00-3.386-1.431 6.407 6.407 0 00-3.6.652 6.715 6.715 0 00-2.718 2.537 7.074 7.074 0 00-1.009 3.648c0 1.29.35 2.554 1.009 3.648a6.715 6.715 0 002.718 2.537 6.407 6.407 0 003.6.652 6.49 6.49 0 003.386-1.43 6.824 6.824 0 01-1.865-2.4 7.085 7.085 0 01-.664-3.006z" fill="#EB001B"></path><path d="M92.216 8.773c0 1.29-.35 2.554-1.01 3.648a6.715 6.715 0 01-2.718 2.537 6.407 6.407 0 01-3.6.652 6.49 6.49 0 01-3.386-1.432 6.836 6.836 0 001.864-2.4 7.096 7.096 0 00.666-3.006 7.096 7.096 0 00-.666-3.006 6.835 6.835 0 00-1.864-2.4 6.49 6.49 0 013.385-1.432 6.407 6.407 0 013.6.652 6.715 6.715 0 012.72 2.536 7.075 7.075 0 011.009 3.649v.002zM91.581 13.031v-.221h.087v-.046h-.219v.046h.094v.221h.038zm.425 0v-.267h-.066l-.077.191-.077-.191h-.06v.267h.049v-.2l.071.174h.05l.072-.174v.202l.038-.002z" fill="#F79E1B"></path><path d="M31.454 9.705c.149.1.372.174.595.174.348 0 .546-.174.546-.448 0-.248-.149-.372-.496-.522-.422-.149-.694-.372-.694-.745 0-.398.347-.696.843-.696.273 0 .446.05.57.124l-.1.274a.932.932 0 00-.495-.125c-.347 0-.496.224-.496.398 0 .248.149.373.52.497.447.174.646.373.646.77 0 .398-.298.746-.893.746-.248 0-.521-.074-.67-.174l.124-.273zM33.586 9.233c0 .447.298.646.645.646.248 0 .397-.05.52-.1l.05.25c-.124.049-.322.124-.62.124-.57 0-.917-.373-.917-.945s.347-1.019.868-1.019c.595 0 .769.547.769.87v.174h-1.315zm.992-.224c0-.223-.1-.547-.471-.547-.347 0-.496.324-.52.547h.991zM36.662 10.052c-.099.05-.297.1-.545.1-.57 0-.918-.373-.918-.945s.397-.994.992-.994c.199 0 .372.05.471.1l-.074.248a.7.7 0 00-.397-.1c-.421 0-.67.324-.67.721 0 .423.273.696.645.696.199 0 .323-.05.422-.1l.074.274zM38.598 9.605c0 .199 0 .373.024.497h-.297l-.025-.298a.704.704 0 01-.62.348c-.298 0-.645-.174-.645-.82V8.237h.347v1.019c0 .348.124.596.422.596.223 0 .397-.149.446-.323.025-.05.025-.1.025-.174V8.213h.347v1.392M39.167 8.835c0-.224 0-.398-.024-.572h.297l.025.373a.55.55 0 01.52-.398h.1v.323h-.124c-.248 0-.397.174-.446.423v1.168h-.348V8.835zM40.606 7.915a.223.223 0 01-.223-.223c0-.125.099-.224.223-.224s.223.1.223.224-.074.223-.223.223zm.174 2.212h-.323V8.263h.347v1.864h-.024zM41.749 7.816v.447h.496v.249h-.496V9.53c0 .223.074.373.248.373.1 0 .149 0 .198-.025l.025.248a.923.923 0 01-.297.05.504.504 0 01-.372-.15c-.1-.099-.124-.273-.124-.496V8.51h-.298v-.248h.298v-.348l.322-.1zM42.789 8.263l.397 1.094c.05.124.099.273.124.372.024-.099.074-.248.124-.397l.372-1.094h.347l-.521 1.342c-.248.646-.397.97-.645 1.168a.99.99 0 01-.421.224l-.075-.273a.762.762 0 00.298-.174.908.908 0 00.273-.373c.024-.025.024-.05.024-.075 0-.024 0-.05-.024-.074l-.695-1.715h.422M31.454 13.558c.149.1.372.174.595.174.348 0 .546-.174.546-.448 0-.248-.149-.373-.496-.522-.422-.149-.694-.372-.694-.745 0-.398.347-.696.843-.696.273 0 .446.05.57.124l-.1.273a.932.932 0 00-.495-.124c-.347 0-.496.224-.496.398 0 .248.149.373.52.497.447.174.646.373.646.77 0 .398-.298.746-.893.746-.248 0-.521-.075-.67-.174l.124-.273zM33.76 11.669v.447h.497v.249h-.496v.994c0 .223.074.373.248.373.099 0 .148 0 .198-.025l.025.248a.923.923 0 01-.298.05.504.504 0 01-.372-.15c-.099-.099-.124-.273-.124-.496v-1.02h-.297v-.248h.297v-.348l.323-.074zM35.942 13.533c0 .174 0 .323.025.447h-.297l-.025-.224c-.1.15-.298.274-.57.274a.541.541 0 01-.571-.547c0-.447.397-.696 1.116-.696v-.05c0-.149-.05-.447-.422-.422a.893.893 0 00-.496.149l-.074-.224c.149-.1.372-.149.62-.149.57 0 .72.398.72.77v.672h-.026zm-.322-.497c-.372 0-.794.05-.794.422 0 .224.15.323.323.323a.44.44 0 00.446-.323c0-.025.025-.074.025-.1v-.322zM36.49 12.613c0-.2 0-.348-.025-.497h.297l.025.298a.687.687 0 01.62-.348c.248 0 .67.149.67.795v1.119h-.347v-1.07c0-.297-.124-.546-.422-.546a.454.454 0 00-.446.348.316.316 0 00-.025.15v1.118h-.347v-1.367zM40.233 11.245v2.262c0 .174 0 .348.025.472h-.298l-.025-.323a.688.688 0 01-.62.373c-.446 0-.794-.373-.794-.945 0-.621.397-.994.844-.994.297 0 .47.124.57.274v-1.119h.298zm-.347 1.616c0-.05 0-.1-.025-.15a.487.487 0 00-.496-.397c-.347 0-.57.298-.57.72 0 .373.198.696.545.696.223 0 .422-.149.496-.397.025-.05.025-.1.025-.15v-.322h.025zM42.12 13.533c0 .174 0 .323.025.447h-.298l-.025-.224c-.099.15-.297.274-.57.274a.541.541 0 01-.57-.547c0-.447.396-.696 1.116-.696v-.05c0-.149-.05-.447-.422-.422a.893.893 0 00-.496.149l-.074-.224c.148-.1.372-.149.62-.149.57 0 .719.398.719.77v.672h-.025zm-.347-.497c-.372 0-.794.05-.794.422 0 .224.149.323.323.323a.44.44 0 00.446-.323c0-.025.025-.074.025-.1v-.322zM42.665 12.688c0-.224 0-.398-.024-.572h.297l.025.373h.025a.55.55 0 01.52-.398h.1v.323h-.124c-.248 0-.397.174-.447.423v1.168h-.347l-.025-1.317zM45.492 11.245v2.262c0 .174 0 .348.025.472h-.298l-.025-.323a.7.7 0 01-.644.373c-.447 0-.794-.373-.794-.945 0-.621.372-.994.843-.994.298 0 .471.124.57.274v-1.119h.323zm-.322 1.616c0-.05 0-.1-.025-.15a.507.507 0 00-.496-.397c-.347 0-.546.298-.546.72 0 .373.199.696.546.696.223 0 .446-.149.496-.397 0-.05.025-.1.025-.15v-.322zM46.012 13.632c.1.074.273.124.446.124.248 0 .348-.124.348-.273 0-.174-.1-.249-.348-.348-.347-.125-.496-.299-.496-.522 0-.299.248-.547.645-.547.199 0 .347.05.447.124l-.075.249a.668.668 0 00-.372-.1c-.198 0-.297.125-.297.249 0 .149.099.224.347.323.322.124.496.273.496.572 0 .323-.248.571-.695.571-.198 0-.396-.05-.52-.124l.074-.298zM50.228 13.905c-.124.05-.372.124-.694.124-.72 0-1.29-.472-1.29-1.317 0-.82.546-1.367 1.364-1.367.323 0 .521.074.62.124l-.074.273c-.124-.05-.298-.1-.521-.1-.62 0-1.017.399-1.017 1.07 0 .646.372 1.044.992 1.044.199 0 .422-.05.546-.1l.074.249zM51.344 14.03c-.496 0-.893-.373-.893-.97 0-.621.422-.994.918-.994.545 0 .893.398.893.944 0 .696-.472 1.02-.918 1.02zm0-.274c.322 0 .57-.298.57-.72 0-.324-.148-.722-.57-.722-.397 0-.57.373-.57.721.024.423.248.721.57.721zM54.246 13.458c0 .199 0 .373.025.497h-.298l-.025-.298a.704.704 0 01-.62.347c-.297 0-.644-.173-.644-.82v-1.093h.347v1.019c0 .348.099.596.421.596.224 0 .372-.149.447-.323.025-.05.025-.1.025-.174v-1.143h.347v1.392M54.818 12.613c0-.2 0-.348-.025-.497h.298l.024.298a.687.687 0 01.62-.348c.248 0 .67.149.67.795v1.119h-.347v-1.07c0-.297-.124-.546-.422-.546a.454.454 0 00-.446.348c-.025.05-.025.1-.025.15v1.118h-.347v-1.367M58.29 13.905c-.1.05-.273.1-.546.1-.57 0-.918-.373-.918-.945s.397-.994.992-.994c.199 0 .372.05.471.1l-.074.248a.7.7 0 00-.397-.1c-.421 0-.67.324-.67.721 0 .423.273.696.645.696.199 0 .323-.05.422-.1l.074.274zM58.835 11.768a.223.223 0 01-.224-.224c0-.124.1-.223.224-.223s.223.1.223.223c0 .125-.075.224-.223.224zm.173 2.212h-.347v-1.864h.347v1.864zM59.925 11.245h-.347v2.734h.347v-2.734zM29.718 12.737L9.803 19 4 3.168 24.907 2l4.811 10.737z" fill="#02797E"></path><path d="M14.665 9.555c0 .397-.099.745-.272 1.069a2.203 2.203 0 01-.744.77c-.323.199-.72.348-1.166.447-.446.1-.942.15-1.513.15h-.397v2.038H7.994V7.243h3.026c1.14 0 2.033.2 2.678.572.645.373.967.97.967 1.74zm-2.48.025c0-.597-.446-.895-1.314-.895h-.322v1.814h.297c.422 0 .769-.074.992-.223.223-.125.347-.373.347-.696zM21.063 14.03a7.3 7.3 0 01-1.364.124c-.72 0-1.364-.075-1.91-.249-.57-.174-1.042-.397-1.438-.696a2.903 2.903 0 01-.893-1.093 3.487 3.487 0 01-.298-1.442c0-.522.1-.994.323-1.441.223-.423.52-.795.917-1.119a4.735 4.735 0 011.414-.72c.545-.174 1.14-.249 1.786-.249.496 0 .967.025 1.388.1.422.099.422.099.744.223v1.815a3.023 3.023 0 00-.868-.348c-.322-.1-.67-.15-1.016-.15-.596 0-1.067.174-1.439.473-.372.323-.546.77-.546 1.392 0 .298.05.571.174.82.124.223.273.422.471.571.199.15.422.274.695.348.273.075.545.125.843.125.298 0 .62-.025.918-.1.297-.074.62-.149.942-.298v1.715c-.397.1-.446.124-.843.199zM25.577 7.243h-2.604v6.81h2.604v-6.81zM25.85 5.106c0 .448-.15.82-.447 1.069-.298.248-.67.398-1.116.398-.446 0-.818-.125-1.116-.398-.298-.249-.446-.621-.446-1.069 0-.472.148-.82.446-1.093.298-.274.67-.398 1.116-.398.446 0 .818.124 1.116.398.298.248.446.621.446 1.093z" fill="#fff"></path><path d="M60 8.09a.78.78 0 01-.794.77.78.78 0 01-.794-.77.78.78 0 01.794-.77.78.78 0 01.793.77zm-1.34 0c0 .323.248.571.546.571.322 0 .545-.248.545-.571a.562.562 0 00-.57-.572c-.298 0-.52.249-.52.572zm.447.372h-.224v-.72c.05 0 .174-.025.323-.025.149 0 .223.025.273.05.05.024.074.074.074.149 0 .074-.074.124-.174.149.075.025.124.074.15.174.024.1.024.149.049.174h-.248c-.025-.025-.025-.1-.05-.15-.025-.074-.05-.099-.124-.099h-.074v.298h.025zm.024-.397h.075c.074 0 .124-.025.124-.075 0-.05-.05-.1-.124-.1h-.075v.175z" fill="#02797E"></path><path d="M10.63.155L6.96 8.858H4.576L2.774 1.921c-.104-.425-.207-.58-.531-.76C1.685.863.79.58 0 .412L.052.155h3.85c.492 0 .933.322 1.037.89l.946 5.028L8.257.155h2.373zm9.372 5.866c.013-2.295-3.189-2.424-3.176-3.442.013-.31.311-.645.96-.735.323-.039 1.218-.078 2.229.387l.402-1.844A6.174 6.174 0 0018.304 0c-2.23 0-3.811 1.186-3.824 2.875-.013 1.251 1.127 1.947 1.983 2.373.881.425 1.18.696 1.18 1.083-.013.58-.7.838-1.349.85-1.14.014-1.801-.309-2.32-.553l-.415 1.908c.532.245 1.504.451 2.515.464 2.372 0 3.915-1.173 3.928-2.979zm5.911 2.837H28L26.172.155h-1.931c-.428 0-.804.245-.96.632l-3.396 8.058h2.372l.467-1.302h2.904l.285 1.315zm-2.528-3.082l1.193-3.262.687 3.263h-1.88zM13.857.155l-1.866 8.703H9.735L11.602.155h2.255z" transform="translate(103 6)" fill="url(#card-disclaimer-icons_svg__paint0_linear)"></path><defs><linearGradient id="card-disclaimer-icons_svg__paint0_linear" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(28.0001 0 0 27.8511 0 -9.428)"><stop stop-color="#1A1E5A"></stop><stop offset="1" stop-color="#122D98"></stop></linearGradient></defs></svg></p>
+                      <p>Платёж безопасен. Мы не храним данные карт, все операции проводит Сбербанк - платёжная система, сертифицированная  по международному стандарту безопасности PCI DSS.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="execution-pay__item">
+                <div class="execution-pay__name">
+                  <label class="label label_radio execution-pay__check">
+                    <input type="radio" name="type_pay" id="typePayCash">
+                    <span class="label__symb"></span>
+                    <span class="label__title">Наличными</span>
+                  </label>
+                </div>
+                <div class="execution-pay__content" style="display: none;">
+                  <div class="execution-pay__row">
+                    <p>С какой суммы подготовить сдачу?</p>
+                    <div class="input-wrap input-wrap_rub">
+                      <input type="text" class="_input" placeholder="0" value="0" id="payChange">
+                    </div>
+                    <label class="label label_checkbox">
+                      <input type="checkbox" name="type_pay" id="payWithoutChange">
+                      <span class="label__symb"></span>
+                      <span class="label__title">Без сдачи</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="execution-info">
+              <label class="label label_checkbox execution-info__label">
+                <input type="checkbox" name="type_pay" id="executionInfo">
+                <span class="label__symb"></span>
+                <span class="label__title">Сообщать о бонусах, акциях и новых продуктах</span>
+              </label>
+              <div class="execution-info__i">i</div>
+            </div>
+          </div>
+
+          <div class="execution__sidebar cheque">
+            <div class="cheque__title">Состав заказа</div>
+            <div class="cheque__items">
+              <div class="cheque__item">
+                <div class="cheque__name">Кломбо</div>
+                <div class="cheque__summ"><span>599</span>₽</div>
+                <div class="cheque__description">Средняя 30 см, традиционное тесто</div>
+              </div>
+              <div class="cheque__item">
+                <div class="cheque__name">Кломбо</div>
+                <div class="cheque__summ"><span>599</span>₽</div>
+                <div class="cheque__description">Средняя 30 см, традиционное тесто</div>
+              </div>
+              <div class="cheque__item">
+                <div class="cheque__name">Кломбо</div>
+                <div class="cheque__summ"><span>599</span>₽</div>
+                <div class="cheque__description">Средняя 30 см, традиционное тесто</div>
+              </div>
+            </div>
+            <div class="cheque__result">
+              <div class="cheque__subtitle">Сумма заказа</div>
+              <div class="cheque__price"><span>1 048</span>₽</div>
+            </div>
+            <div class="cheque__subtitle _center">Бесплатная доставка</div>
+          </div>
+
+        </div>
+        <div class="execution__nav">
+          <a href="#" class="link-important"><span class="icon-arrow link-important__icon"></span>Вернуться в магазин</a>
+          <a href="#" class="btn btn_main">Завершить оформление<span class="icon-arrow"></span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+            <footer class="footer">
+                <div class="_container">
+                    <div class="_container__item">
+                        <div class="footer__content">
+
+                            <div class="footer__part footer__part_1">
+                                <div class="footer__logo">
+                                    <a href="#" class="logo">
+                                        <span class="logo__icon icon-logo"></span>
+                                        <div class="logo__text">
+                                            <span class="logo__title">Ya Bao</span>
+                                            <span class="logo__label">Дух китайской еды</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <nav class="footer__menu addit-menu">
+                                    <ul class="addit-menu__list">
+                                        <li class="addit-menu__item"><a href="#" class="addit-menu__link">Калорийность и состав</a></li>
+                                        <li class="addit-menu__item"><a href="#" class="addit-menu__link">Правовая информация</a></li>
+                                        <li class="addit-menu__item addit-menu__item_2">
+                                            <span class="addit-menu__title">Мы в соцсетях</span>
+                                            <ul class="addit-menu__sublist">
+                                                <li class="addit-menu__subitem"><a href="#" class="addit-menu__sublink">YouTube</a></li>
+                                                <li class="addit-menu__subitem"><a href="#" class="addit-menu__sublink">Facebook</a></li>
+                                                <li class="addit-menu__subitem"><a href="#" class="addit-menu__sublink">Instagram</a></li>
+                                                <li class="addit-menu__subitem"><a href="#" class="addit-menu__sublink">ВКонтакте</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </nav>
+                                <div class="footer__bottom">
+                                    <div class="footer__copyright">YaBao. Все права защищены © 2021</div>
+                                    <div class="footer__pay">
+                                        <img src="img/pay-visa.png" alt="" class="">
+                                        <img src="img/pay-pal.png" alt="" class="">
+                                        <img src="img/pay-mastercard.png" alt="" class="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="footer__part footer__part_2">
+                                <div class="footer__feedback feedback">
+                                    <div class="feedback__title">Остались вопросы? А мы всегда на связи:</div>
+                                    <div class="feedback__messengers">
+                                        <a href="#" class="feedback__messenger"><img src="img/comm-viber.png" alt=""></a>
+                                        <a href="#" class="feedback__messenger"><img src="img/comm-skype.png" alt=""></a>
+                                        <a href="#" class="feedback__messenger"><img src="img/comm-direct.png" alt=""></a>
+                                        <a href="#" class="feedback__messenger"><img src="img/comm-telegram.png" alt=""></a>
+                                        <a href="#" class="feedback__messenger"><img src="img/comm-facebook.png" alt=""></a>
+                                        <a href="#" class="feedback__messenger"><img src="img/comm-vk.png" alt=""></a>
+                                        <a href="#" class="feedback__messenger feedback__messenger_2"><span>Написать нам</span></a>
+                                    </div>
+                                </div>
+                                <div class="footer__call call">
+                                    <a href="tel:88003333662" class="call__num _cl-main">8 800 333-36-62</a>
+                                    <a href="#" class="btn btn_gray btn_rounded call__btn">Заказать звонок</a>
+                                </div>
+                            </div>
+
+                            <div class="footer__illustr"><img src="img/cup.png" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+
+            </footer>
+        </div>
+
+            <div class="modal product-card" id="productCard">
+                <form action="" name="add_cart_product" class="form product-card__form">
+                    <div class="product-card__wrap">
+                        <div class="product-card__img"><img src="img/temp/prod-2.png" alt=""></div>
+                        <div class="product-card__info product-info">
+                            <div class="product-info__wrap">
+                                <div class="product-info__name">С креветками и трюфелями</div>
+                                <div class="product-info__description">25 см, традиционное тесто, 360г</div>
+                                <div class="product-info__result">Спагетти</div>
+                                <div class="product-info__type product-type">
+                                    <div class="product-type__group">
+                                        <label class="label product-type__label">
+                                            <input type="radio" name="type_product_1" checked>
+                                            <div class="label__box">Маленькая</div>
+                                        </label>
+                                        <label class="label product-type__label">
+                                            <input type="radio" name="type_product_1">
+                                            <div class="label__box">Средняя</div>
+                                        </label>
+                                        <label class="label product-type__label">
+                                            <input type="radio" name="type_product_1">
+                                            <div class="label__box">Большая</div>
+                                        </label>
+                                    </div>
+                                    <div class="product-type__group">
+                                        <label class="label product-type__label">
+                                            <input type="radio" name="type_product_2" checked>
+                                            <div class="label__box">Традиционное</div>
+                                        </label>
+                                        <label class="label product-type__label">
+                                            <input type="radio" name="type_product_2">
+                                            <div class="label__box">Тонкое</div>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="product-info__ingredient">
+                                    <label class="label label_2 form__label">
+                                        <input type="checkbox" name="ingredient_product_1">
+                                        <div class="label__cont">
+                                            <img src="img/temp/ingredient-1.png" alt="" class="label__img">
+                                            <span class="label__name">Острая чорризо</span>
+                                            <span class="label__price">120 ₽</span>
+                                        </div>
+                                    </label>
+                                    <label class="label label_2 form__label">
+                                        <input type="checkbox" name="ingredient_product_2">
+                                        <div class="label__cont">
+                                            <img src="img/temp/ingredient-2.png" alt="" class="label__img">
+                                            <span class="label__name">Острый халапеньо</span>
+                                            <span class="label__price">120 ₽</span>
+                                        </div>
+                                    </label>
+                                    <label class="label label_2 form__label">
+                                        <input type="checkbox" name="ingredient_product_3">
+                                        <div class="label__cont">
+                                            <img src="img/temp/ingredient-3.png" alt="" class="label__img">
+                                            <span class="label__name">Брынза</span>
+                                            <span class="label__price">120 ₽</span>
+                                        </div>
+                                    </label>
+                                    <label class="label label_2 form__label">
+                                        <input type="checkbox" name="ingredient_product_4">
+                                        <div class="label__cont">
+                                            <img src="img/temp/ingredient-4.png" alt="" class="label__img">
+                                            <span class="label__name">Чеддер и пармезан</span>
+                                            <span class="label__price">120 ₽</span>
+                                        </div>
+                                    </label>
+                                    <label class="label label_2 form__label">
+                                        <input type="checkbox" name="ingredient_product_5">
+                                        <div class="label__cont">
+                                            <img src="img/temp/ingredient-5.png" alt="" class="label__img">
+                                            <span class="label__name">Острый цыплёнок</span>
+                                            <span class="label__price">120 ₽</span>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <button type="submit" class="btn btn_main product-info__btn btn_fullw">Добавить в корзину<span id="summAddToCart">0</span>₽</button>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+
+            <div class="modal modal_small login" id="loginModal">
+                <h2 class="login__title _cl-main">Вход на сайт</h2>
+                <form action="" class="form login__wrap" id="formLogin">
+                    <div class="login__row login__row_phone">
+                        <div class="login__label"><label for="loginPhone" class="form__label">Номер телефона</label></div>
+                        <div class="login__input"><input type="tel" id="loginPhone" value="" class="_input _phone" required></div>
+                        <div class="login__change" style=""><a href="#" id="loginChangeTel">Изменить</a></div>
+                    </div>
+                    <div class="login__row login__row_sms" style="">
+                        <div class="login__label"><label for="loginSMS" class="form__label">Код из СМС</label></div>
+                        <div class="login__input"><input type="text" id="loginSMS" value="" class="_input _sms"></div>
+                        <div class="login__change"><a href="#" id="loginGetSmsNew">Получить новый код</a></div>
+                    </div>
+                    <div class="login__row login__row_submit">
+                        <button type="submit" class="btn btn_main login__submit">Выслать код</button>
+                        <p class="login__agreement">Продолжая, вы соглашаетесь со <a href="#">сбором и обработкой персональных данных и пользовательским соглашением</a></p>
+                    </div>
+                </form>
+            </div>
+
+            <div class="modal delivery-time" id="deliveryTime">
+                <div class="delivery-time__title">Время доставки</div>
+                <div class="delivery-time__wrap">
+                    <div class="delivery-time__item"><span class="delivery-time__text">Побыстрее</span></div>
+                    <div class="delivery-time__item"><span class="delivery-time__text">9:00 - 9:30</span></div>
+                    <div class="delivery-time__item"><span class="delivery-time__text">10:00 - 10:30</span></div>
+                    <div class="delivery-time__item"><span class="delivery-time__text">12:00 - 12:30</span></div>
+                    <div class="delivery-time__item"><span class="delivery-time__text">14:00 - 14:30</span></div>
+                    <div class="delivery-time__item"><span class="delivery-time__text">15:00 - 15:30</span></div>
+                    <div class="delivery-time__item"><span class="delivery-time__text">16:00 - 16:30</span></div>
+                    <div class="delivery-time__item"><span class="delivery-time__text">17:00 - 17:30</span></div>
+                    <div class="delivery-time__item"><span class="delivery-time__text">18:00 - 18:30</span></div>
+                    <div class="delivery-time__item"><span class="delivery-time__text">19:00 - 19:30</span></div>
+                    <div class="delivery-time__item"><span class="delivery-time__text">15:00 - 15:30</span></div>
+                    <div class="delivery-time__item"><span class="delivery-time__text">16:00 - 16:30</span></div>
+                    <div class="delivery-time__item"><span class="delivery-time__text">17:00 - 17:30</span></div>
+                    <div class="delivery-time__item"><span class="delivery-time__text">18:00 - 18:30</span></div>
+                    <div class="delivery-time__item"><span class="delivery-time__text">19:00 - 19:30</span></div>
+                </div>
+            </div>
+
+            <div class="modal delivery-address" id="deliveryAddress">
+                <div class="delivery-address__title">Куда доставить?</div>
+                <div class="delivery-address__wrap">
+                    <div class="delivery-address__nav">
+                        <div class="delivery-address__type _active" data-type-delivery="1">Доставка</div>
+                        <div class="delivery-address__type" data-type-delivery="2">Самовывоз</div>
+                    </div>
+                    <div class="delivery-address__content">
+                        <div class="delivery-address__item" data-type-delivery="1">
+                            <form class="delivery-address__form" id="setDeliveryAddress">
+                                <input type="text" class="_input delivery-address__input _span-3" name="delivery_street" placeholder="Улица" required>
+                                <input type="text" class="_input delivery-address__input" name="delivery_home" placeholder="Дом" required>
+                                <input type="text" class="_input delivery-address__input" name="delivery_apart" placeholder="Квартира">
+                                <div class="form-input delivery-address__input">
+                                    <label class="form-input__label">
+                                        <div class="form-input__field">
+                                            <input type="text" class="form-input__input" name="delivery_corp" placeholder="Подъезд">
+                                        </div>
+                                        <p class="form-input__help"><span class="form-input__hint">Последний</span></p>
+                                    </label>
+                                </div>
+                                <div class="form-input delivery-address__input">
+                                    <label class="form-input__label">
+                                        <div class="form-input__field">
+                                            <input type="text" class="form-input__input" name="delivery_domofon" placeholder="Домофон">
+                                        </div>
+                                        <p class="form-input__help"><span class="form-input__hint">Домофон</span></p>
+                                    </label>
+                                </div>
+                                <div class="form-input delivery-address__input">
+                                    <label class="form-input__label">
+                                        <div class="form-input__field">
+                                            <input type="text" class="form-input__input" name="delivery_floor" placeholder="Этаж">
+                                        </div>
+                                        <p class="form-input__help"><span class="form-input__hint">Последний</span></p>
+                                    </label>
+                                </div>
+                                <div class="form-input delivery-address__input _span-4">
+                                    <label class="form-input__label">
+                                        <div class="form-input__field">
+                                            <input type="text" class="form-input__input" name="delivery_name" placeholder="Название адреса" required>
+                                        </div>
+                                        <p class="form-input__help">Например, <span class="form-input__hint">Дом</span> или <span class="form-input__hint">Работа</span></p>
+                                    </label>
+                                </div>
+                                <div class="form-input delivery-address__input _span-4">
+                                    <div class="form-input__field form-input__field_textarea">
+                                        <textarea name="" id="" cols="30" rows="10" class="form-input__input" name="delivery_comment" placeholder="Комментарий к адресу"></textarea>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn_main delivery-address__send _span-4">Подтвердить адрес</button>
+                            </form>
+                        </div>
+                        <div class="delivery-address__item" style="display: none;" data-type-delivery="2">
+                            <form class="delivery-address__form" id="setPickupAddress">
+                                <div class="delivery-address__input">
+                                    <label class="label label_radio">
+                                        <input type="radio" name="type_pay" id="deliveryOurAddr1" checked>
+                                        <span class="label__symb"></span>
+                                        <span class="label__title">Абакан</span>
+                                    </label>
+                                    <p>ул. Кирова, 101</p>
+                                    <p>09:00 — 00:00</p>
+                                </div>
+                                <button type="submit" class="btn btn_main delivery-address__send _span-4">Выбрать</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <script src="js/script.min.js"></script>
+    </body>
+</html>

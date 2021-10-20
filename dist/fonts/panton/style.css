@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Panton';
+    src: url('Panton-ExtraBold.eot');
+    src: local('Panton ExtraBold'), local('Panton-ExtraBold'),
+        url('Panton-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('Panton-ExtraBold.woff') format('woff'),
+        url('Panton-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}

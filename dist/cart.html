@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/yabao-icons/style.css">
+    <link rel="stylesheet" href="fonts/panton/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Корзина</title>
+</head>
+
+<body>
+<div class="_wrapper">
+    <header class="header header_mini">
+        <div class="_container">
+            <div class="_container__item">
+                <div class="header__content">
+                    <div class="header__top">
+                        <div class="header__logo">
+                            <a href="#" class="logo">
+                                <span class="logo__icon icon-logo"></span>
+                                <div class="logo__text">
+                                    <span class="logo__title">Ya Bao</span>
+                                    <span class="logo__label">Дух китайской еды</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="header__order order-step">
+                            <div class="order-step__item order-step__item_active">
+                                <span class="order-step__num">1</span>
+                                <span class="order-step__name">Корзина</span>
+                            </div>
+                            <div class="order-step__item @@order-class-2">
+                                <span class="order-step__num">2</span>
+                                <span class="order-step__name">Оформление заказа</span>
+                            </div>
+                            <div class="order-step__item @@order-class-3">
+                                <span class="order-step__num">3</span>
+                                <span class="order-step__name">Заказ принят</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+<main class="main main_bottomm">
+  <div class="_container">
+    <div class="_container__item">
+      <div class="cart" id="sectionCart">
+        <h1 class="cart__title">Корзина</h1>
+        <div class="cart__wrap">
+          <div class="cart__items">
+            <div class="cart__item">
+              <div class="cart__col"><img src="img/temp/prod-2.png" class="cart__img" alt=""></div>
+              <div class="cart__col">
+                <div class="cart__name">С креветками и трюфелями</div>
+                <div class="cart__description">Домашнаяя паста феттуччине, сливочный соус, креветки, трюфельное масло, черный перец, пармезан. 350г</div>
+              </div>
+              <div class="cart__col">
+                <div class="cart__sum"><span>120</span>₽</div>
+              </div>
+              <div class="cart__col">
+                <div class="cart__count">
+                  <div class="count-field">
+                    <button class="count-field__btn" data-count-field-btn="-"><span class="icon-minus"></span></button>
+                    <div class="count-field__num" data-count-field-num="0">0</div>
+                    <button class="count-field__btn" data-count-field-btn="+"><span class="icon-plus"></span></button>
+                  </div>
+                </div>
+              </div>
+              <div class="cart__col">
+                <a href="#" class="cart__del"><span class="icon-delete"></span></a>
+              </div>
+            </div>
+            <div class="cart__item">
+              <div class="cart__col"><img src="img/temp/prod-2.png" class="cart__img" alt=""></div>
+              <div class="cart__col">
+                <div class="cart__name">С креветками и трюфелями</div>
+                <div class="cart__description">Домашнаяя паста феттуччине, сливочный соус, креветки, трюфельное масло, черный перец, пармезан. 350г</div>
+              </div>
+              <div class="cart__col">
+                <div class="cart__sum"><span>120</span>₽</div>
+              </div>
+              <div class="cart__col">
+                <div class="cart__count">
+                  <div class="count-field">
+                    <button class="count-field__btn" data-count-field-btn="-"><span class="icon-minus"></span></button>
+                    <div class="count-field__num" data-count-field-num="0">0</div>
+                    <button class="count-field__btn" data-count-field-btn="+"><span class="icon-plus"></span></button>
+                  </div>
+                </div>
+              </div>
+              <div class="cart__col">
+                <a href="#" class="cart__del"><span class="icon-delete"></span></a>
+              </div>
+            </div>
+            <div class="cart__item">
+              <div class="cart__col"><img src="img/temp/prod-2.png" class="cart__img" alt=""></div>
+              <div class="cart__col">
+                <div class="cart__name">С креветками и трюфелями</div>
+                <div class="cart__description">Домашнаяя паста феттуччине, сливочный соус, креветки, трюфельное масло, черный перец, пармезан. 350г</div>
+              </div>
+              <div class="cart__col">
+                <div class="cart__sum"><span>120</span>₽</div>
+              </div>
+              <div class="cart__col">
+                <div class="cart__count">
+                  <div class="count-field">
+                    <button class="count-field__btn" data-count-field-btn="-"><span class="icon-minus"></span></button>
+                    <div class="count-field__num" data-count-field-num="0">0</div>
+                    <button class="count-field__btn" data-count-field-btn="+"><span class="icon-plus"></span></button>
+                  </div>
+                </div>
+              </div>
+              <div class="cart__col">
+                <a href="#" class="cart__del"><span class="icon-delete"></span></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="cart__slider">
+            <div class="cart__subtitle">Добавить к заказу?</div>
+            <div class="swiper swiper-cart" id="swiperCart">
+              <div class="swiper-wrapper swiper-cart__wrap">
+                <div class="swiper-slide swiper-cart__slide">
+                  <div class="swiper-cart__link">
+                    <img src="img/temp/prod-2.png" class="swiper-cart__img" alt="">
+                    <div class="swiper-cart__inf">
+                      <div class="swiper-cart__name">Молочный коктель с приятным аро...</div>
+                      <div class="swiper-cart__price"><span>100</span>₽</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-cart__slide">
+                  <div class="swiper-cart__link">
+                    <img src="img/temp/prod-2.png" class="swiper-cart__img" alt="">
+                    <div class="swiper-cart__inf">
+                      <div class="swiper-cart__name">Молочный коктель с приятным аро...</div>
+                      <div class="swiper-cart__price"><span>100</span>₽</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-cart__slide">
+                  <div class="swiper-cart__link">
+                    <img src="img/temp/prod-2.png" class="swiper-cart__img" alt="">
+                    <div class="swiper-cart__inf">
+                      <div class="swiper-cart__name">Молочный коктель с приятным аро...</div>
+                      <div class="swiper-cart__price"><span>100</span>₽</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-cart__slide">
+                  <div class="swiper-cart__link">
+                    <img src="img/temp/prod-2.png" class="swiper-cart__img" alt="">
+                    <div class="swiper-cart__inf">
+                      <div class="swiper-cart__name">Молочный коктель с приятным аро...</div>
+                      <div class="swiper-cart__price"><span>100</span>₽</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-cart__slide">
+                  <div class="swiper-cart__link">
+                    <img src="img/temp/prod-2.png" class="swiper-cart__img" alt="">
+                    <div class="swiper-cart__inf">
+                      <div class="swiper-cart__name">Молочный коктель с приятным аро...</div>
+                      <div class="swiper-cart__price"><span>100</span>₽</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-cart__slide">
+                  <div class="swiper-cart__link">
+                    <img src="img/temp/prod-2.png" class="swiper-cart__img" alt="">
+                    <div class="swiper-cart__inf">
+                      <div class="swiper-cart__name">Молочный коктель с приятным аро...</div>
+                      <div class="swiper-cart__price"><span>100</span>₽</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="swiper-cart__btn swiper-cart__btn_prev"><span class="swiper-cart__icon icon-arrow"></span></button>
+            <button class="swiper-cart__btn swiper-cart__btn_next"><span class="swiper-cart__icon icon-arrow"></span></button>
+          </div>
+
+          <div class="cart__slider">
+            <div class="cart__subtitle">Соусы к бортикам и закускам</div>
+            <div class="swiper swiper-cart-addit" id="swiperCartAddit">
+              <div class="swiper-wrapper swiper-cart-addit__wrap">
+                <div class="swiper-slide swiper-cart-addit__slide">
+                  <div class="swiper-cart-addit__link">
+                    <img src="img/temp/prod-addit-1.png" class="swiper-cart-addit__img" alt="">
+                    <div class="swiper-cart-addit__name">Сырный соус</div>
+                    <div class="swiper-cart-addit__price"><span>100</span>₽</div>
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-cart-addit__slide">
+                  <div class="swiper-cart-addit__link">
+                    <img src="img/temp/prod-addit-2.png" class="swiper-cart-addit__img" alt="">
+                    <div class="swiper-cart-addit__name">Барбекю</div>
+                    <div class="swiper-cart-addit__price"><span>100</span>₽</div>
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-cart-addit__slide">
+                  <div class="swiper-cart-addit__link">
+                    <img src="img/temp/prod-addit-3.png" class="swiper-cart-addit__img" alt="">
+                    <div class="swiper-cart-addit__name">Ранч</div>
+                    <div class="swiper-cart-addit__price"><span>100</span>₽</div>
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-cart-addit__slide">
+                  <div class="swiper-cart-addit__link">
+                    <img src="img/temp/prod-addit-1.png" class="swiper-cart-addit__img" alt="">
+                    <div class="swiper-cart-addit__name">Сгущёнка</div>
+                    <div class="swiper-cart-addit__price"><span>100</span>₽</div>
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-cart-addit__slide">
+                  <div class="swiper-cart-addit__link">
+                    <img src="img/temp/prod-addit-4.png" class="swiper-cart-addit__img" alt="">
+                    <div class="swiper-cart-addit__name">Малиновое варенье</div>
+                    <div class="swiper-cart-addit__price"><span>100</span>₽</div>
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-cart-addit__slide">
+                  <div class="swiper-cart-addit__link">
+                    <img src="img/temp/prod-addit-3.png" class="swiper-cart-addit__img" alt="">
+                    <div class="swiper-cart-addit__name">Сырный соус c сыром</div>
+                    <div class="swiper-cart-addit__price"><span>100</span>₽</div>
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-cart-addit__slide">
+                  <div class="swiper-cart-addit__link">
+                    <img src="img/temp/prod-addit-2.png" class="swiper-cart-addit__img" alt="">
+                    <div class="swiper-cart-addit__name">Барбекю</div>
+                    <div class="swiper-cart-addit__price"><span>100</span>₽</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="cart__bottom">
+            <div class="cart__promo">
+              <div class="cart__subtitle">Промокод</div>
+              <div class="promo">
+                <input type="text" id="promoCode" value="" class="_input cart__input" placeholder="Введите промокод" required>
+                <button type="submit" class="btn btn_main btn_ cart__submit">Применить</button>
+              </div>
+            </div>
+
+            <div class="cart__result">
+              <p>Сумма заказа</p>
+              <p><span>0</span>₽</p>
+            </div>
+          </div>
+
+          <div class="cart__nav">
+            <a href="#" class="link-important"><span class="icon-arrow link-important__icon"></span>Вернуться в магазин</a>
+            <a href="#" class="btn btn_main">Оформить заказ<span class="icon-arrow"></span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+            <footer class="footer">
+                <div class="_container">
+                    <div class="_container__item">
+                        <div class="footer__content">
+
+                            <div class="footer__part footer__part_1">
+                                <div class="footer__logo">
+                                    <a href="#" class="logo">
+                                        <span class="logo__icon icon-logo"></span>
+                                        <div class="logo__text">
+                                            <span class="logo__title">Ya Bao</span>
+                                            <span class="logo__label">Дух китайской еды</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <nav class="footer__menu addit-menu">
+                                    <ul class="addit-menu__list">
+                                        <li class="addit-menu__item"><a href="#" class="addit-menu__link">Калорийность и состав</a></li>
+                                        <li class="addit-menu__item"><a href="#" class="addit-menu__link">Правовая информация</a></li>
+                                        <li class="addit-menu__item addit-menu__item_2">
+                                            <span class="addit-menu__title">Мы в соцсетях</span>
+                                            <ul class="addit-menu__sublist">
+                                                <li class="addit-menu__subitem"><a href="#" class="addit-menu__sublink">YouTube</a></li>
+                                                <li class="addit-menu__subitem"><a href="#" class="addit-menu__sublink">Facebook</a></li>
+                                                <li class="addit-menu__subitem"><a href="#" class="addit-menu__sublink">Instagram</a></li>
+                                                <li class="addit-menu__subitem"><a href="#" class="addit-menu__sublink">ВКонтакте</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </nav>
+                                <div class="footer__bottom">
+                                    <div class="footer__copyright">YaBao. Все права защищены © 2021</div>
+                                    <div class="footer__pay">
+                                        <img src="img/pay-visa.png" alt="" class="">
+                                        <img src="img/pay-pal.png" alt="" class="">
+                                        <img src="img/pay-mastercard.png" alt="" class="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="footer__part footer__part_2">
+                                <div class="footer__feedback feedback">
+                                    <div class="feedback__title">Остались вопросы? А мы всегда на связи:</div>
+                                    <div class="feedback__messengers">
+                                        <a href="#" class="feedback__messenger"><img src="img/comm-viber.png" alt=""></a>
+                                        <a href="#" class="feedback__messenger"><img src="img/comm-skype.png" alt=""></a>
+                                        <a href="#" class="feedback__messenger"><img src="img/comm-direct.png" alt=""></a>
+                                        <a href="#" class="feedback__messenger"><img src="img/comm-telegram.png" alt=""></a>
+                                        <a href="#" class="feedback__messenger"><img src="img/comm-facebook.png" alt=""></a>
+                                        <a href="#" class="feedback__messenger"><img src="img/comm-vk.png" alt=""></a>
+                                        <a href="#" class="feedback__messenger feedback__messenger_2"><span>Написать нам</span></a>
+                                    </div>
+                                </div>
+                                <div class="footer__call call">
+                                    <a href="tel:88003333662" class="call__num _cl-main">8 800 333-36-62</a>
+                                    <a href="#" class="btn btn_gray btn_rounded call__btn">Заказать звонок</a>
+                                </div>
+                            </div>
+
+                            <div class="footer__illustr"><img src="img/cup.png" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+
+            </footer>
+        </div>
+
+            <div class="modal product-card" id="productCard">
+                <form action="" name="add_cart_product" class="form product-card__form">
+                    <div class="product-card__wrap">
+                        <div class="product-card__img"><img src="img/temp/prod-2.png" alt=""></div>
+                        <div class="product-card__info product-info">
+                            <div class="product-info__wrap">
+                                <div class="product-info__name">С креветками и трюфелями</div>
+                                <div class="product-info__description">25 см, традиционное тесто, 360г</div>
+                                <div class="product-info__result">Спагетти</div>
+                                <div class="product-info__type product-type">
+                                    <div class="product-type__group">
+                                        <label class="label product-type__label">
+                                            <input type="radio" name="type_product_1" checked>
+                                            <div class="label__box">Маленькая</div>
+                                        </label>
+                                        <label class="label product-type__label">
+                                            <input type="radio" name="type_product_1">
+                                            <div class="label__box">Средняя</div>
+                                        </label>
+                                        <label class="label product-type__label">
+                                            <input type="radio" name="type_product_1">
+                                            <div class="label__box">Большая</div>
+                                        </label>
+                                    </div>
+                                    <div class="product-type__group">
+                                        <label class="label product-type__label">
+                                            <input type="radio" name="type_product_2" checked>
+                                            <div class="label__box">Традиционное</div>
+                                        </label>
+                                        <label class="label product-type__label">
+                                            <input type="radio" name="type_product_2">
+                                            <div class="label__box">Тонкое</div>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="product-info__ingredient">
+                                    <label class="label label_2 form__label">
+                                        <input type="checkbox" name="ingredient_product_1">
+                                        <div class="label__cont">
+                                            <img src="img/temp/ingredient-1.png" alt="" class="label__img">
+                                            <span class="label__name">Острая чорризо</span>
+                                            <span class="label__price">120 ₽</span>
+                                        </div>
+                                    </label>
+                                    <label class="label label_2 form__label">
+                                        <input type="checkbox" name="ingredient_product_2">
+                                        <div class="label__cont">
+                                            <img src="img/temp/ingredient-2.png" alt="" class="label__img">
+                                            <span class="label__name">Острый халапеньо</span>
+                                            <span class="label__price">120 ₽</span>
+                                        </div>
+                                    </label>
+                                    <label class="label label_2 form__label">
+                                        <input type="checkbox" name="ingredient_product_3">
+                                        <div class="label__cont">
+                                            <img src="img/temp/ingredient-3.png" alt="" class="label__img">
+                                            <span class="label__name">Брынза</span>
+                                            <span class="label__price">120 ₽</span>
+                                        </div>
+                                    </label>
+                                    <label class="label label_2 form__label">
+                                        <input type="checkbox" name="ingredient_product_4">
+                                        <div class="label__cont">
+                                            <img src="img/temp/ingredient-4.png" alt="" class="label__img">
+                                            <span class="label__name">Чеддер и пармезан</span>
+                                            <span class="label__price">120 ₽</span>
+                                        </div>
+                                    </label>
+                                    <label class="label label_2 form__label">
+                                        <input type="checkbox" name="ingredient_product_5">
+                                        <div class="label__cont">
+                                            <img src="img/temp/ingredient-5.png" alt="" class="label__img">
+                                            <span class="label__name">Острый цыплёнок</span>
+                                            <span class="label__price">120 ₽</span>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <button type="submit" class="btn btn_main product-info__btn btn_fullw">Добавить в корзину<span id="summAddToCart">0</span>₽</button>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+
+            <div class="modal modal_small login" id="loginModal">
+                <h2 class="login__title _cl-main">Вход на сайт</h2>
+                <form action="" class="form login__wrap" id="formLogin">
+                    <div class="login__row login__row_phone">
+                        <div class="login__label"><label for="loginPhone" class="form__label">Номер телефона</label></div>
+                        <div class="login__input"><input type="tel" id="loginPhone" value="" class="_input _phone" required></div>
+                        <div class="login__change" style=""><a href="#" id="loginChangeTel">Изменить</a></div>
+                    </div>
+                    <div class="login__row login__row_sms" style="">
+                        <div class="login__label"><label for="loginSMS" class="form__label">Код из СМС</label></div>
+                        <div class="login__input"><input type="text" id="loginSMS" value="" class="_input _sms"></div>
+                        <div class="login__change"><a href="#" id="loginGetSmsNew">Получить новый код</a></div>
+                    </div>
+                    <div class="login__row login__row_submit">
+                        <button type="submit" class="btn btn_main login__submit">Выслать код</button>
+                        <p class="login__agreement">Продолжая, вы соглашаетесь со <a href="#">сбором и обработкой персональных данных и пользовательским соглашением</a></p>
+                    </div>
+                </form>
+            </div>
+
+            <div class="modal delivery-time" id="deliveryTime">
+                <div class="delivery-time__title">Время доставки</div>
+                <div class="delivery-time__wrap">
+                    <div class="delivery-time__item"><span class="delivery-time__text">Побыстрее</span></div>
+                    <div class="delivery-time__item"><span class="delivery-time__text">9:00 - 9:30</span></div>
+                    <div class="delivery-time__item"><span class="delivery-time__text">10:00 - 10:30</span></div>
+                    <div class="delivery-time__item"><span class="delivery-time__text">12:00 - 12:30</span></div>
+                    <div class="delivery-time__item"><span class="delivery-time__text">14:00 - 14:30</span></div>
+                    <div class="delivery-time__item"><span class="delivery-time__text">15:00 - 15:30</span></div>
+                    <div class="delivery-time__item"><span class="delivery-time__text">16:00 - 16:30</span></div>
+                    <div class="delivery-time__item"><span class="delivery-time__text">17:00 - 17:30</span></div>
+                    <div class="delivery-time__item"><span class="delivery-time__text">18:00 - 18:30</span></div>
+                    <div class="delivery-time__item"><span class="delivery-time__text">19:00 - 19:30</span></div>
+                    <div class="delivery-time__item"><span class="delivery-time__text">15:00 - 15:30</span></div>
+                    <div class="delivery-time__item"><span class="delivery-time__text">16:00 - 16:30</span></div>
+                    <div class="delivery-time__item"><span class="delivery-time__text">17:00 - 17:30</span></div>
+                    <div class="delivery-time__item"><span class="delivery-time__text">18:00 - 18:30</span></div>
+                    <div class="delivery-time__item"><span class="delivery-time__text">19:00 - 19:30</span></div>
+                </div>
+            </div>
+
+            <div class="modal delivery-address" id="deliveryAddress">
+                <div class="delivery-address__title">Куда доставить?</div>
+                <div class="delivery-address__wrap">
+                    <div class="delivery-address__nav">
+                        <div class="delivery-address__type _active" data-type-delivery="1">Доставка</div>
+                        <div class="delivery-address__type" data-type-delivery="2">Самовывоз</div>
+                    </div>
+                    <div class="delivery-address__content">
+                        <div class="delivery-address__item" data-type-delivery="1">
+                            <form class="delivery-address__form" id="setDeliveryAddress">
+                                <input type="text" class="_input delivery-address__input _span-3" name="delivery_street" placeholder="Улица" required>
+                                <input type="text" class="_input delivery-address__input" name="delivery_home" placeholder="Дом" required>
+                                <input type="text" class="_input delivery-address__input" name="delivery_apart" placeholder="Квартира">
+                                <div class="form-input delivery-address__input">
+                                    <label class="form-input__label">
+                                        <div class="form-input__field">
+                                            <input type="text" class="form-input__input" name="delivery_corp" placeholder="Подъезд">
+                                        </div>
+                                        <p class="form-input__help"><span class="form-input__hint">Последний</span></p>
+                                    </label>
+                                </div>
+                                <div class="form-input delivery-address__input">
+                                    <label class="form-input__label">
+                                        <div class="form-input__field">
+                                            <input type="text" class="form-input__input" name="delivery_domofon" placeholder="Домофон">
+                                        </div>
+                                        <p class="form-input__help"><span class="form-input__hint">Домофон</span></p>
+                                    </label>
+                                </div>
+                                <div class="form-input delivery-address__input">
+                                    <label class="form-input__label">
+                                        <div class="form-input__field">
+                                            <input type="text" class="form-input__input" name="delivery_floor" placeholder="Этаж">
+                                        </div>
+                                        <p class="form-input__help"><span class="form-input__hint">Последний</span></p>
+                                    </label>
+                                </div>
+                                <div class="form-input delivery-address__input _span-4">
+                                    <label class="form-input__label">
+                                        <div class="form-input__field">
+                                            <input type="text" class="form-input__input" name="delivery_name" placeholder="Название адреса" required>
+                                        </div>
+                                        <p class="form-input__help">Например, <span class="form-input__hint">Дом</span> или <span class="form-input__hint">Работа</span></p>
+                                    </label>
+                                </div>
+                                <div class="form-input delivery-address__input _span-4">
+                                    <div class="form-input__field form-input__field_textarea">
+                                        <textarea name="" id="" cols="30" rows="10" class="form-input__input" name="delivery_comment" placeholder="Комментарий к адресу"></textarea>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn_main delivery-address__send _span-4">Подтвердить адрес</button>
+                            </form>
+                        </div>
+                        <div class="delivery-address__item" style="display: none;" data-type-delivery="2">
+                            <form class="delivery-address__form" id="setPickupAddress">
+                                <div class="delivery-address__input">
+                                    <label class="label label_radio">
+                                        <input type="radio" name="type_pay" id="deliveryOurAddr1" checked>
+                                        <span class="label__symb"></span>
+                                        <span class="label__title">Абакан</span>
+                                    </label>
+                                    <p>ул. Кирова, 101</p>
+                                    <p>09:00 — 00:00</p>
+                                </div>
+                                <button type="submit" class="btn btn_main delivery-address__send _span-4">Выбрать</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <script src="js/script.min.js"></script>
+    </body>
+</html>
