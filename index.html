@@ -1,49 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
-    <style>
-        body {
-            background: #475a6d;
-            margin: 0;
-            padding: 0;
-            font-family: 'Arial';
-        }
-        .main {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 100%;
-            height: 100vh;
-        }
-        ul {
-            background: #dcdff5;
-            padding: 20px;
-            border-radius: 10px;
-            width: 50%;
-        }
-        li {
-            margin: 10px 0;
-            padding: 0;
-            list-style: none;
-        }
-        a {
-            color: #0e394c;
-            font-size: 18px;
-        }
-    </style>
-    <meta charset="UTF-8">
-    <title>YaBao Pages</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Document</title>
 </head>
+
 <body>
-
-<main class="main">
-    <ul>
-        <li><a href="dist/home.html" target="_blank">Главная</a></li>
-        <li><a href="dist/promotions.html" target="_blank">Список акций</a></li>
-        <li><a href="dist/cart.html" target="_blank">Корзина</a></li>
-        <li><a href="dist/execution.html" target="_blank">Оформление</a></li>
-    </ul>
-</main>
-
+  <div class="wrapper">
+    <div class="main">
+      <div class="main__header">
+        <h1 class="title">YaBao</h1>
+        <p class="subtitle">Вёрстка сайта</p>
+      </div>
+      <div class="main__body">
+        <div class="list">
+          <div class="list__item">
+            <div class="list__info"><a class="link list__name" href="dist/home.html" target="_blank">Главная</a><a class="link list__code" href="#" target="_blank"><i class="_icon-code"></i>html</a>
+            </div>
+            <div class="list__illustration">
+              <picture>
+                <source srcset="images/home.webp" type="image/webp">
+                  <img class="list__image" src="images/home.jpg" />
+              </picture>
+            </div>
+          </div>
+          <div class="list__item">
+            <div class="list__info"><a class="link list__name" href="dist/promotions.html" target="_blank">Список акций</a><a class="link list__code" href="#" target="_blank"><i class="_icon-code"></i>html</a>
+            </div>
+            <div class="list__illustration">
+              <img class="list__image" src="images/promotions.jpg" />
+            </div>
+          </div>
+          <div class="list__item">
+            <div class="list__info"><a class="link list__name" href="dist/cart.html" target="_blank">Корзина</a><a class="link list__code" href="#" target="_blank"><i class="_icon-code"></i>html</a>
+            </div>
+            <div class="list__illustration">
+              <img class="list__image" src="images/cart.jpg" />
+            </div>
+          </div>
+          <div class="list__item">
+            <div class="list__info"><a class="link list__name" href="dist/order.html" target="_blank">Оформление</a><a class="link list__code" href="#" target="_blank"><i class="_icon-code"></i>html</a>
+            </div>
+            <div class="list__illustration">
+              <img class="list__image" src="images/order.jpg" />
+            </div>
+          </div>
+          <div class="list__item">
+            <div class="list__row"><a class="link list__code" target="_blank" href="#"><i class="_icon-code"></i>css</a><a class="link list__code" target="_blank" href="#"><i class="_icon-code"></i>js</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/main.js">
+  </script>
 </body>
+
 </html>
